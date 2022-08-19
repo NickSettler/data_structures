@@ -144,7 +144,7 @@ describe("Stack tests", () => {
     test("Stack Symbol.iterator", () => {
       const stack = new Stack([1, 2]);
 
-      expect([...stack]).toEqual([1, 2]);
+      expect([...stack]).toEqual([2, 1]);
     });
   });
 });

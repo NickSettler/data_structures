@@ -212,6 +212,6 @@ export default class Stack<T> implements Iterable<T> {
    * @returns {Iterator<T>} An iterator over the items of the stack.
    */
   [Symbol.iterator](): Iterator<T, T, T> {
-    return this._items[Symbol.iterator]();
+    return this._items.reverse()[Symbol.iterator]();
   }
 }
